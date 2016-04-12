@@ -3,7 +3,6 @@
 
 //const lightlvl = 1024;
 //const lightlvl = 2048;
-//const lightlvl = 4096;
 //const lightlvl = 8192;
 
 const lightlvl = 60000; // some number near 65535
@@ -18,7 +17,15 @@ function loop()
 	    server.log("light lvl change");
 	    server.log(currentLight);
 	   // agent.send("on", "on, 0");
-
+	   /*
+ifttt.sendEvent("some_one_open_the_fridge", function(err, response) {
+    if(err) {
+        server.error(err);
+        return;
+    }
+    server.log("Success!!");
+});
+*/
 	}
 	else
 	{
