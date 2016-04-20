@@ -7,20 +7,20 @@ ifttt <- IFTTT(SECRET_KEY);
 
 // Constants and user strings
 
-function callifttt(on0)
+function callIFTTT(on0)
 {
     ifttt.sendEvent(NOTIFICATION, function(err, response) {
     if(err) {
         server.error(err);
         return;
     }
-    server.log("Success!!");
+    server.log("Run Success!!");
 });
 
 }
 // initialize services
 
-device.on("someoneopen", callifttt );
+device.on("someoneOpen", callIFTTT );
 server.log("agent build Success!!");
 
 
